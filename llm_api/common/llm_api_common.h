@@ -36,7 +36,7 @@ static_assert(sizeof(size_t) == 8);
 #endif
 
 #ifndef LLM_API_USE_ARENA_ALLOCATOR
-#define LLM_API_USE_ARENA_ALLOCATOR LLM_API_PLATFORM_WINDOWS // TODO should be on all platforms, for some reason (to_chars(float) doesnt work on gcc)
+#define LLM_API_USE_ARENA_ALLOCATOR 0 // TODO should be on all platforms, for some reason (to_chars(float) doesnt work on gcc)
 #endif
 
 #ifndef LLM_API_USE_SIMDSTRING
